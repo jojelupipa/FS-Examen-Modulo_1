@@ -1,0 +1,5 @@
+#! /bin/bash
+
+# Script que redirecciona los archivos de home modificados en las últimas 48 horas al directorio backup en el directorio temporal del sistema
+
+sudo find $HOME -atime -2 > /tmp/backup 	# En caso de denegación del permiso añadir "sudo" para realizar la orden con permisos
